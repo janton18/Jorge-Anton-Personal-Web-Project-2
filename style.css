@@ -1,14 +1,18 @@
-/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #121212; /* Fondo oscuro global */
+    color: #e0e0e0; /* Texto claro */
 }
 
+/* Navegación */
 nav {
-    background-color: #333;
-    padding: 10px;
+    background-color: #1a1a1a; /* Fondo negro para el menú */
+    padding: 10px 0;
+    position: sticky; /* Mantiene el menú fijo en la parte superior */
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -20,24 +24,31 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #00aaff; /* Color azul claro */
     text-decoration: none;
     font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
+nav ul li a:hover {
+    color: #fff; /* Cambia a blanco al pasar el mouse */
+}
+
+/* Encabezado de las páginas con imagen de fondo */
 header {
-    height: 300px;
+    height: 400px;
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
 .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7); /* Capa oscura sobre la imagen */
     height: 100%;
     display: flex;
     justify-content: center;
@@ -45,51 +56,126 @@ header {
     flex-direction: column;
     color: white;
     text-align: center;
+    padding: 20px;
 }
 
 header h1 {
     font-size: 48px;
     margin: 0;
+    color: #00aaff; /* Azul claro */
 }
 
 header p {
-    font-size: 24px;
-    margin: 10px 0 0;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #b0bec5; /* Gris claro */
 }
 
+/* Estilos para el contenido */
 main {
-    padding: 20px;
+    padding: 40px 20px;
+    background-color: #1e1e1e; /* Fondo gris oscuro */
 }
 
+main h2 {
+    font-size: 36px;
+    color: #00aaff;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 18px;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Estilos para los eventos */
+.evento {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #2e2e2e;
+    background-color: #2e2e2e; /* Fondo gris oscuro para cada evento */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.evento:hover {
+    transform: translateY(-10px); /* Efecto de elevación al pasar el mouse */
+}
+
+.evento h3 {
+    margin-top: 0;
+    color: #00aaff;
+}
+
+.evento p {
+    font-size: 16px;
+    color: #b0bec5; /* Gris claro */
+}
+
+.evento-img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    display: block;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Footer */
 footer {
-    background-color: #333;
+    background-color: #1a1a1a;
     color: white;
     text-align: center;
-    padding: 20px 0;
-    position: fixed;
+    padding: 20px;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
 
 footer .social-links a {
-    color: white;
+    color: #00aaff;
     text-decoration: none;
     margin: 0 10px;
 }
 
-/* Estilos específicos de cada header */
+footer .social-links a:hover {
+    color: #fff; /* Blanco al pasar el mouse */
+}
+
+/* Imágenes de fondo específicas para cada página */
 .home-header {
-    background-image: url('img/madrid.jpg'); /* Cambia por la imagen de fondo que prefieras */
+    background-image: url('img/madrid-night.jpg'); /* Imagen de fondo para Home */
 }
 
 .about-header {
-    background-image: url('img/about.jpg');
+    background-image: url('../imagenes/socialmedia.jpg'); /* Imagen de fondo para About */
 }
 
 .portfolio-header {
-    background-image: url('img/portfolio.jpg');
+    background-image: url('../imagenes/disco.jpg'); /* Imagen de fondo para Portfolio */
 }
 
 .contact-header {
-    background-image: url('img/contact.jpg');
+    background-image: url('img/madrid-contact.jpg'); /* Imagen de fondo para Contact */
+}
+
+/* Estilos responsivos para móviles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
 }
