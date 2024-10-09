@@ -2,15 +2,15 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Fondo oscuro global */
-    color: #e0e0e0; /* Texto claro */
+    background-color: #121212; 
+    color: #e0e0e0; 
 }
 
-/* Navegación */
+
 nav {
-    background-color: #1a1a1a; /* Fondo negro para el menú */
+    background-color: #1a1a1a; 
     padding: 10px 0;
-    position: sticky; /* Mantiene el menú fijo en la parte superior */
+    position: sticky; 
     top: 0;
     z-index: 1000;
 }
@@ -28,7 +28,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #00aaff; /* Color azul claro */
+    color: #00aaff; 
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -36,10 +36,10 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #fff; /* Cambia a blanco al pasar el mouse */
+    color: #fff; 
 }
 
-/* Encabezado de las páginas con imagen de fondo */
+
 header {
     height: 400px;
     background-size: cover;
@@ -48,7 +48,7 @@ header {
 }
 
 .overlay {
-    background-color: rgba(0, 0, 0, 0.7); /* Capa oscura sobre la imagen */
+    background-color: rgba(0, 0, 0, 0.7); 
     height: 100%;
     display: flex;
     justify-content: center;
@@ -62,19 +62,19 @@ header {
 header h1 {
     font-size: 48px;
     margin: 0;
-    color: #00aaff; /* Azul claro */
+    color: #00aaff; 
 }
 
 header p {
     font-size: 20px;
     margin-top: 10px;
-    color: #b0bec5; /* Gris claro */
+    color: #b0bec5; 
 }
 
-/* Estilos para el contenido */
+
 main {
     padding: 40px 20px;
-    background-color: #1e1e1e; /* Fondo gris oscuro */
+    background-color: #1e1e1e; 
 }
 
 main h2 {
@@ -89,19 +89,19 @@ main p {
     line-height: 1.6;
 }
 
-/* Estilos para los eventos */
+
 .evento {
     margin-bottom: 40px;
     padding: 20px;
     border: 1px solid #2e2e2e;
-    background-color: #2e2e2e; /* Fondo gris oscuro para cada evento */
+    background-color: #2e2e2e; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
 }
 
 .evento:hover {
-    transform: translateY(-10px); /* Efecto de elevación al pasar el mouse */
+    transform: translateY(-10px); 
 }
 
 .evento h3 {
@@ -111,7 +111,7 @@ main p {
 
 .evento p {
     font-size: 16px;
-    color: #b0bec5; /* Gris claro */
+    color: #b0bec5; 
 }
 
 .evento-img {
@@ -123,7 +123,7 @@ main p {
     border-radius: 10px;
 }
 
-/* Footer */
+
 footer {
     background-color: #1a1a1a;
     color: white;
@@ -141,27 +141,27 @@ footer .social-links a {
 }
 
 footer .social-links a:hover {
-    color: #fff; /* Blanco al pasar el mouse */
+    color: #fff; 
 }
 
-/* Imágenes de fondo específicas para cada página */
+
 .home-header {
-    background-image: url('img/madrid-night.jpg'); /* Imagen de fondo para Home */
+    background-image: url('../imagenes/fiesta.jpg'); 
 }
 
 .about-header {
-    background-image: url('../imagenes/socialmedia.jpg'); /* Imagen de fondo para About */
+    background-image: url('../imagenes/vive.jpg'); 
 }
 
 .portfolio-header {
-    background-image: url('../imagenes/disco.jpg'); /* Imagen de fondo para Portfolio */
+    background-image: url('../imagenes/disco.jpg'); 
 }
 
 .contact-header {
-    background-image: url('img/madrid-contact.jpg'); /* Imagen de fondo para Contact */
+    background-image: url('../imagenes/socialmedia.jpg'); 
 }
 
-/* Estilos responsivos para móviles */
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 36px;
